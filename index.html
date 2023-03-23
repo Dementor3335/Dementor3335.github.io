@@ -219,7 +219,7 @@
 								}
 							}
 						}
-						let MF = p5.Vector.cross(p5.Vector.mult(this.particles[i].v, this.particles[i].c), this.B);
+						let MF = p5.Vector.cross(this.B, p5.Vector.mult(this.particles[i].v, this.particles[i].c));
 						this.particles[i].addForce(MF);
 					}
 					for (let i = 0; i < this.particles.length; i++) {
